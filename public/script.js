@@ -63,9 +63,12 @@ document.getElementById('dietaForm').addEventListener('submit', function(e) {
   const carbsGrams = remainingCalories / 4;
   const carbsCalories = carbsGrams * 4;
 
+  const waterLiters = (weight * 35) / 1000;
+
   document.getElementById('tmb').textContent = bmr.toFixed(0) + ' kcal';
   document.getElementById('get').textContent = tdee.toFixed(0) + ' kcal';
   document.getElementById('calorias').textContent = dailyCalories.toFixed(0) + ' kcal';
+  document.getElementById('agua').textContent = waterLiters.toFixed(1) + 'L';
 
   document.getElementById('proteina').textContent = proteinGrams.toFixed(0) + 'g';
   document.getElementById('proteina-cal').textContent = proteinCalories.toFixed(0) + ' kcal';

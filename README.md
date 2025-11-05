@@ -2,6 +2,8 @@
 
 Calculadora de dieta completa e gratuita para calcular TMB, gasto energético e macronutrientes personalizados.
 
+🌐 **Acesse agora**: https://calculadora-dieta.pages.dev
+
 > 🤖 **Este projeto foi desenvolvido 100% por Inteligência Artificial (Claude)** - demonstrando o poder da IA na criação de aplicações web funcionais e completas.
 
 ## Funcionalidades

@@ -1,0 +1,24 @@
+{
+  "name": "calculadora-dieta",
+  "version": "1.0.0",
+  "description": "Calculadora de dieta completa e gratuita para calcular TMB, gasto energético e macronutrientes personalizados",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler pages dev public --port 8788",
+    "deploy": "wrangler pages deploy public --project-name=calculadora-dieta",
+    "preview": "wrangler pages dev public"
+  },
+  "keywords": [
+    "diet",
+    "calculator",
+    "nutrition",
+    "macros",
+    "bmr",
+    "tdee"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}

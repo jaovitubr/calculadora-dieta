@@ -53,3 +53,31 @@ This is a **purely client-side static application** with no backend:
 ## Development
 
 This is a static site with no build process. Files in `public/` are served directly.
+
+**Install dependencies**:
+```bash
+npm install
+```
+
+**Development server**:
+```bash
+npm run dev
+# Runs Wrangler Pages dev server on http://localhost:8788
+```
+
+**Deploy to production**:
+```bash
+npm run deploy
+# Deploys to Cloudflare Pages
+```
+
+**Alternative local testing**: Open `public/index.html` in a browser or use any static server:
+```bash
+# Using Python
+python -m http.server 8000 --directory public
+
+# Using Node.js http-server
+npx http-server public -p 8000
+```
+
+**Automatic deployment**: Cloudflare Pages automatically deploys when you push to GitHub (configured in `wrangler.jsonc`)

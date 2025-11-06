@@ -34,6 +34,7 @@ document.getElementById('dietaForm').addEventListener('submit', function(e) {
   const calorieAdjustment = parseInt(document.getElementById('deficit').value);
   const proteinPerKg = parseFloat(document.getElementById('proteinaPorKg').value);
   const fatPerKg = parseFloat(document.getElementById('gorduraPorKg').value);
+  const waterPerKg = parseFloat(document.getElementById('aguaPorKg').value);
 
   let bmr;
   if (gender === 'masculino') {
@@ -63,7 +64,7 @@ document.getElementById('dietaForm').addEventListener('submit', function(e) {
   const carbsGrams = remainingCalories / 4;
   const carbsCalories = carbsGrams * 4;
 
-  const waterLiters = (weight * 35) / 1000;
+  const waterLiters = (weight * waterPerKg) / 1000;
 
   document.getElementById('tmb').textContent = bmr.toFixed(0) + ' kcal';
   document.getElementById('get').textContent = tdee.toFixed(0) + ' kcal';

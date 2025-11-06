@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #45ac16 0%, #7abc27 100%);
   min-height: 100vh;
   padding: 20px;
 }
@@ -22,7 +22,7 @@ body {
 
 h1 {
   text-align: center;
-  color: #667eea;
+  color: #2d7a1f;
   margin-bottom: 30px;
   font-size: 2.5em;
 }
@@ -58,12 +58,12 @@ select {
 }
 
 select:focus {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23667eea' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2345ac16' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
 }
 
 input:focus, select:focus {
   outline: none;
-  border-color: #667eea;
+  border-color: #45ac16;
 }
 
 .radio-group {
@@ -99,20 +99,20 @@ input:focus, select:focus {
 }
 
 .radio-option input[type="radio"]:checked + label {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #45ac16 0%, #7abc27 100%);
   color: white;
-  border-color: #667eea;
+  border-color: #45ac16;
   transform: scale(1.02);
 }
 
 .radio-option label:hover {
-  border-color: #667eea;
+  border-color: #45ac16;
 }
 
 button {
   width: 100%;
   padding: 15px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #45ac16 0%, #7abc27 100%);
   color: white;
   border: none;
   border-radius: 8px;
@@ -147,7 +147,7 @@ button:active {
 }
 
 .result-card {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #45ac16 0%, #7abc27 100%);
   padding: 25px;
   border-radius: 12px;
   margin-bottom: 20px;
@@ -157,6 +157,7 @@ button:active {
 .result-card h2 {
   margin-bottom: 15px;
   font-size: 1.5em;
+  text-shadow: 0 1px 4px rgb(0 0 0 / 20%);
 }
 
 .result-item {
@@ -175,11 +176,13 @@ button:active {
 
 .result-label {
   font-weight: 600;
+  text-shadow: 0 1px 4px rgb(0 0 0 / 20%);
 }
 
 .result-value {
   font-size: 1.2em;
   font-weight: 700;
+  text-shadow: 0 1px 4px rgb(0 0 0 / 20%);
 }
 
 .macros-grid {
@@ -199,17 +202,20 @@ button:active {
 .macro-card h3 {
   margin-bottom: 10px;
   font-size: 1.1em;
+  text-shadow: 0 1px 4px rgb(0 0 0 / 20%);
 }
 
 .macro-value {
   font-size: 1.8em;
   font-weight: 700;
   margin-bottom: 5px;
+  text-shadow: 0 1px 4px rgb(0 0 0 / 20%);
 }
 
 .macro-calorias {
   font-size: 0.9em;
-  opacity: 0.9;
+  opacity: 1;
+  text-shadow: 0 1px 4px rgb(0 0 0 / 20%);
 }
 
 .hidden {
@@ -221,6 +227,24 @@ button:active {
   display: block;
   margin-top: 5px;
   line-height: 1.4;
+}
+
+.section-title {
+  margin: 35px 0 25px 0;
+  padding-top: 25px;
+  border-top: 2px solid #e0e0e0;
+}
+
+.section-title h2 {
+  color: #2d7a1f;
+  font-size: 1.5em;
+  margin-bottom: 8px;
+}
+
+.section-description {
+  color: #666;
+  font-size: 0.95em;
+  margin: 0;
 }
 
 footer {
@@ -239,4 +263,36 @@ footer a {
 
 footer a:hover {
   opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 5px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.75em;
+  }
+
+  footer {
+    margin-top: 0;
+  }
 }

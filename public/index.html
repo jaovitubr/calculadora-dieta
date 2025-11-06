@@ -41,17 +41,17 @@
 
       <div class="form-group">
         <label for="peso">Peso (kg):</label>
-        <input type="number" id="peso" step="0.1" required>
+        <input type="number" id="peso" step="0.1" min="20" max="300" required>
       </div>
 
       <div class="form-group">
         <label for="altura">Altura (cm):</label>
-        <input type="number" id="altura" step="0.1" required>
+        <input type="number" id="altura" step="0.1" min="100" max="250" required>
       </div>
 
       <div class="form-group">
         <label for="idade">Idade (anos):</label>
-        <input type="number" id="idade" required>
+        <input type="number" id="idade" min="10" max="120" required>
       </div>
 
       <div class="form-group">
@@ -79,25 +79,25 @@
 
       <div class="form-group hidden" id="ajusteCaloriasGroup">
         <label for="deficit">Ajuste de Calorias (kcal):</label>
-        <input type="number" id="deficit" value="400">
+        <input type="number" id="deficit" value="400" min="50" max="5000">
         <small id="ajusteDescricao" class="help-text"></small>
       </div>
 
       <div class="form-group">
         <label for="proteinaPorKg">Proteína (g/kg de peso corporal):</label>
-        <input type="number" id="proteinaPorKg" value="2" step="0.1" min="0" required>
+        <input type="number" id="proteinaPorKg" value="2" step="0.1" min="0.5" max="5" required>
         <small class="help-text">Recomendado: 1.6-2.2 g/kg para atividade física, 0.8-1.2 g/kg sedentário</small>
       </div>
 
       <div class="form-group">
         <label for="gorduraPorKg">Gordura (g/kg de peso corporal):</label>
-        <input type="number" id="gorduraPorKg" value="1" step="0.1" min="0" required>
+        <input type="number" id="gorduraPorKg" value="1" step="0.1" min="0.3" max="3" required>
         <small class="help-text">Recomendado: 0.8-1.2 g/kg para manutenção da saúde hormonal</small>
       </div>
 
       <div class="form-group">
         <label for="aguaPorKg">Água (ml/kg de peso corporal):</label>
-        <input type="number" id="aguaPorKg" value="35" step="1" min="0" required>
+        <input type="number" id="aguaPorKg" value="35" step="1" min="20" max="80" required>
         <small class="help-text">Recomendado: 30-50 ml/kg, ajuste conforme clima e atividade física</small>
       </div>
 

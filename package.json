@@ -1,7 +1,7 @@
 {
-  "name": "calculadora-dieta",
+  "name": "calculadora-macros",
   "version": "1.0.0",
-  "description": "Calculadora de dieta completa e gratuita para calcular TMB, gasto energético e macronutrientes personalizados",
+  "description": "Calculadora de macronutrientes completa e gratuita para calcular TMB, gasto energético e macros personalizados",
   "scripts": {
     "dev": "wrangler pages dev",
     "deploy": "wrangler pages deploy"

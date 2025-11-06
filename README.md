@@ -1,8 +1,8 @@
-# 🥗 Calculadora de Dieta
+# 🥗 Calculadora de Macro Nutrientes
 
-Calculadora de dieta completa e gratuita para calcular TMB, gasto energético e macronutrientes personalizados.
+Calculadora de macronutrientes completa e gratuita para calcular TMB, gasto energético e macros personalizados.
 
-🌐 **Acesse agora**: https://calculadora-dieta.pages.dev
+🌐 **Acesse agora**: https://calculadora-macros.pages.dev
 
 > 🤖 **Este projeto foi desenvolvido 100% por Inteligência Artificial (Claude)** - demonstrando o poder da IA na criação de aplicações web funcionais e completas.
 
@@ -33,7 +33,7 @@ Este projeto está hospedado no Cloudflare Pages.
 2. Selecione seu nível de atividade física
 3. Escolha seu objetivo (perder, manter ou ganhar peso)
 4. Ajuste os macronutrientes conforme sua preferência
-5. Clique em "Calcular Dieta"
+5. Clique em "Calcular Macro Nutrientes"
 
 ## License
 
